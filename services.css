@@ -9,14 +9,17 @@ body {
     flex-flow: column nowrap;
     gap: 30px;
 }
+
 img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
 }
+
 .nav {
     align-self: stretch;
 }
+
 .service {
     display: flex;
     flex-flow: row nowrap;
@@ -30,12 +33,14 @@ img {
     animation: fadeIn 0.75s;
     align-items: center;
 }
+
 a {
     text-decoration: none;
     color: inherit;
     font-size: 14px;
     align-self: flex-end;
 }
+
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
