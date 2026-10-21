@@ -12,6 +12,8 @@ a {
 body {
     color: white;
     font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 .nav {
     position: sticky;
@@ -38,12 +40,12 @@ body {
     list-style: none;
 }
 .links a {
-color: white;
-text-transform: uppercase;
-letter-spacing: 2px;
-font-size: 13px;
-opacity: 0.6;
-transition: opacity 0.2s;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    opacity: 0.6;
+    transition: opacity 0.2s;
 }
 links a:hover,.links a.active { 
     opacity: 1; 

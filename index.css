@@ -1,53 +1,27 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: sans-serif; color: white;}
-
 .hero {
-  height: 100vh;                         /* full screen height */
+  height: 100vh;
   background-image:
-    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),  /* dark tint */
+    linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
     url("images/IMG-HERO.jpg");
-  background-size: cover;                /* fill, crop the excess */
+  background-size: cover;
   background-position: center;
   display: flex;
-  flex-direction: column;                /* nav on top, text below */
+  flex-direction: column;
 }
-
-.nav {
-  display: flex;
-  justify-content: space-between;        /* logo left, links right */
-  align-items: center;
-  padding: 30px 60px;
-  animation: fadeIn 1s;
+.hero-text {
+  margin-top: auto;
+  padding: 0 60px 80px;
+  animation: fadeIn 4s;
 }
-.links { display: flex; gap: 40px; list-style: none;}
-.links a {
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 13px;
+.eyebrow {
+  text-transform:
+  uppercase;
+  letter-spacing: 3px;
 }
-
-.hero-text { margin-top: auto; padding: 0 60px 80px; animation: fadeIn 4s;}  /* pushed to bottom */
-.eyebrow { text-transform: uppercase; letter-spacing: 3px; }
-h1 { font-size: 80px; }
-
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 30px;
-  border: 2px solid white;                   /* pill shape */
-  color: white;
-  text-decoration: none;
-}
-.btn:hover { background: white; color: black; }
-
-.logo {
-    font-weight: 600;
-    font-style: italic;
-    font-size: 28px;
+h1 { 
+  font-size: 80px;
 }
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
