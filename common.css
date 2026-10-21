@@ -50,3 +50,25 @@ body {
 links a:hover,.links a.active { 
     opacity: 1; 
 }
+
+    footer {
+      text-align: center;
+      padding: 60px 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    footer p {
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      opacity: 0.5;
+      margin-top: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 30px;
+      border: 2px solid white;
+      color: white;
+    }
+    .btn:hover { background: white; color: black; }

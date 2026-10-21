@@ -1,12 +1,6 @@
 body {
   background-color: black;
 }
-
-    /* =========================================================
-       3. PAGE HEADER: same eyebrow + big heading pattern as
-       the landing page, just shorter (not full screen).
-       Named .page-header so it won't clash with .hero in index.css.
-       ========================================================= */
     .page-header {
       padding: 80px 60px 50px;
       animation: fadeIn 2s;
@@ -74,87 +68,6 @@ body {
       opacity: 1;
       transform: translateY(0);
     }
-
-    /* =========================================================
-       5. LIGHTBOX (pure CSS)
-       Clicking a photo links to "#p1". The element with id="p1"
-       becomes the :target and is shown. "Close" links to "#",
-       which un-targets it and hides it again.
-       ========================================================= */
-    .lightbox {
-      position: fixed;
-      inset: 0;
-      z-index: 100;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-      padding: 40px;
-      background: rgba(0, 0, 0, 0.95);
-      opacity: 0;
-      pointer-events: none;       /* invisible AND unclickable until targeted */
-      transition: opacity 0.3s ease;
-    }
-
-    .lightbox:target {
-      opacity: 1;
-      pointer-events: auto;
-    }
-
-    .lightbox img {
-      max-height: 78vh;
-      max-width: 88vw;
-    }
-
-    .lightbox .info { text-align: center; }
-    .lightbox .info h3 { font-size: 26px; }
-
-    /* Close and arrow controls */
-    .lightbox .close,
-    .lightbox .prev,
-    .lightbox .next {
-      position: absolute;
-      font-size: 36px;
-      line-height: 1;
-      padding: 8px 14px;
-      opacity: 0.6;
-      transition: opacity 0.2s;
-    }
-
-    .lightbox .close { top: 20px; right: 30px; }
-    .lightbox .prev  { left: 20px;  top: 50%; transform: translateY(-50%); }
-    .lightbox .next  { right: 20px; top: 50%; transform: translateY(-50%); }
-
-    .lightbox .close:hover,
-    .lightbox .prev:hover,
-    .lightbox .next:hover { opacity: 1; }
-
-    /* =========================================================
-       6. FOOTER: uses your .btn style from index.css
-       ========================================================= */
-    footer {
-      text-align: center;
-      padding: 60px 20px;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    footer p {
-      font-size: 12px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      opacity: 0.5;
-      margin-top: 30px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 10px 30px;
-      border: 2px solid white;
-      color: white;
-    }
-    .btn:hover { background: white; color: black; }
-
     /* =========================================================
        7. ANIMATION: same fadeIn as index.css
        ========================================================= */
