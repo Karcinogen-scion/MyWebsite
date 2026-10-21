@@ -14,6 +14,9 @@ img {
     height: 150px;
     border-radius: 50%;
 }
+.nav {
+    align-self: stretch;
+}
 .service {
     display: flex;
     flex-flow: row nowrap;
